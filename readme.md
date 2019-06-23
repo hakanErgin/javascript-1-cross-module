@@ -72,26 +72,6 @@ and [a whole bunch more emojis](https://gist.github.com/rxaviers/7360908) for fu
 
 
 
-### Week 2 Check-Off
-
-
-|  | your Emoji | your comments | coach emoji | coach comments |
-| --- | --- | --- | --- | --- |
-| Home page | | | | |
-| Team page | | | | |
-| Calc page | | | | |
-
-
-### Week 3 Check-Off
-
-
-|  | your Emoji | your comments | coach emoji | coach comments |
-| --- | --- | --- | --- | --- |
-| Home page  | | | | |
-| Team page | | | | |
-| Calc page | | | | |
-
-
 
 [TOP](#javascript-1-project)
 
