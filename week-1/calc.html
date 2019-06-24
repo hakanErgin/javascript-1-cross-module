@@ -1,21 +1,51 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>calc</title>
-
   <script type="text/javascript">
     // data (variables)
-
+    var a = 2;
+    var b = 3;
     // functions
-
+    function print_vals (param, param1) {
+      console.log("numbers are: ", param, param1);
+    }
+    // 1st way
+    function calc_vals (param1, param2, oper) {
+      switch (oper) {
+        case "+": console.log(param1 + param2);
+        break;
+        case "-": console.log(param1 - param2);
+        break;
+        case "*": console.log(param1 * param2);
+        break;
+        case "/": console.log(param1 / param2);
+        break;
+      }
+    }
+      //2nd way
+    function calc_vals2 (param) {
+      console.log(param);
+    }
   </script>
 </head>
-
 <body>
-
-
+  <p>this is the first way</p>
+  <div>
+    <button onclick="print_vals(a, b);">show numbers</button> <br>
+    <button onclick="calc_vals(a, b, '+');">+</button> <br>
+    <button onclick="calc_vals(a, b, '-');">-</button> <br>
+    <button onclick="calc_vals(a, b, '*');">*</button> <br>
+    <button onclick="calc_vals(a, b, '/');">/</button> <br>
+  </div>
+  <p>this is the second way</p>
+  <div>
+    <button onclick="calc_vals2(a + b);">add</button> <br>
+    <button onclick="calc_vals2(a - b);">substract</button> <br>
+    <button onclick="calc_vals2(a * b);">multiply</button> <br>
+    <button onclick="calc_vals2(a / b);">divide</button> <br>
+  </div>
+    <a href="./index.html">home</a> <br>
 </body>
 </html>

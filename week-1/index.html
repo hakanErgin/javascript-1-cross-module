@@ -1,22 +1,26 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>home page</title>
-
   <script type="text/javascript">
     // data (variables)
-
+    var project = {
+      "name": "js week1 project",
+      "link": "https://github.com/hakanErgin/javascript-1-cross-module/tree/master/week-1",
+      "description": "this is week 1 js project"
+    }
     // functions
-
+    function print_deets(obj) {
+      console.log(obj);
+    }
   </script>
 </head>
-
 <body>
   <h1>week 1 index.html</a>
-  <!-- delete this button when you're ready to start! -->
-  <a href="./example-to-study.html">example to study</a>
+  <p>greets</p>
+  <button onclick="print_deets(project)">print details</button><br>
+  <a href="team.html">team page</a><br>
+  <a href="calc.html">calc page</a><br>
 </body>
 </html>

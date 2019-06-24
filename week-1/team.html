@@ -1,20 +1,34 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>team page</title>
-
+  <title>example</title>
   <script type="text/javascript">
     // data (variables)
+    var team_name = "js hakan";
+    var team_members = ["xxx", "yyy", "zzz"];
 
     // functions
-
+    function print_thing(param) {
+      if (param === team_name) {
+        console.log("team name is: ", param);
+      } else if (param === team_members){
+        console.log("team members are: " , param);
+      } else {
+        console.log("team name is: " + team_name + " and team members are: " + team_members);
+      }
+    } 
   </script>
 </head>
-
 <body>
-
+  <h1>team page</h1>
+  <p>
+    team details  
+  </p>
+  <button onclick="print_thing(team_name);">team name</button> <br>
+  <button onclick="print_thing(team_members);">team members</button> <br>
+  <button onclick="print_thing();">details</button> <br>
+  <hr>
+  <a href="./index.html">home</a> <br>
 </body>
 </html>
