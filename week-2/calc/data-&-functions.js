@@ -1,24 +1,29 @@
 // data (variables)
 var a = 10;
 var b = 5;
+
 // functions
-function logAB(varA, varB){
-    console.log("The value of A is:"+ varA +" and the value of B is:"+ varB); 
-    }
-function add(varA, varB){
-    console.log(varA +" plus "+ varB +" equals: ");  
-    console.log(varA + varB); 
-}
-function subtract(varA, varB){
-    console.log(varA +" minus "+ varB +" equals: ");   
-    console.log(varA - varB); 
-}
-function multiply(varA, varB){
-    console.log(varA +" times "+ varB +" equals: ");  
-    console.log(varA * varB);
-}
-function divide(varA, varB){
-    console.log(varA +" divided by "+ varB +" equals: ");  
-    console.log(varA / varB);
-}
-    
+function logAB(varA, varB) {
+    console.log("a: " + varA);
+    console.log("b: " + varB);
+};
+
+function do_math(varA, varB, func) {
+    console.log("The result of the calculation is: " + func(varA, varB));
+};
+
+function add(varA, varB) {
+    return varA + varB;
+};
+
+function subtract(varA, varB) {
+    return varA - varB;
+};
+
+function multiply(varA, varB) {
+    return varA * varB;
+};
+
+function divide(varA, varB) {
+    return varA / varB;
+};

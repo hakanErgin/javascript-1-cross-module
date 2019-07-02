@@ -1,15 +1,25 @@
+// onclick's
+let print_values_button = document.getElementById("logABbtn");
+print_values_button.onclick = function () {
+    logAB(a, b);
+}
 
-var logABButton = document.getElementById("logABbtn");
-logABButton.onclick = function () { logAB(a, b); }
+let button_add_result = document.getElementById("addbtn");
+button_add_result.onclick = function () {
+    do_math(a, b, add);
+}
 
-var addButton = document.getElementById("addbtn");
-addButton.onclick = function () { add(a, b); }
+let button_subtract_result = document.getElementById("subtractbtn");
+button_subtract_result.onclick = function () {
+    do_math(a, b, subtract);
+}
 
-var subtractButton = document.getElementById("subtractbtn");
-subtractButton.onclick = function () { subtract(a, b); }
+let button_multiply_result = document.getElementById("multiplybtn");
+button_multiply_result.onclick = function () {
+    do_math(a, b, multiply);
+}
 
-var multiplyButton = document.getElementById("multiplybtn");
-multiplyButton.onclick = function () { multiply(a, b); }
-
-var divideButton = document.getElementById("dividebtn");
-divideButton.onclick = function () { divide(a, b); }
+let button_divide_result = document.getElementById("dividebtn");
+button_divide_result.onclick = function () {
+    do_math(a, b, divide);
+}
