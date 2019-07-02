@@ -68,9 +68,16 @@ and [a whole bunch more emojis](https://gist.github.com/rxaviers/7360908) for fu
 | --- | --- | --- | --- | --- |
 | Home page | :white_check_mark:| | | |
 | Team page | :white_check_mark:| | | |
-| Calc page |:white_check_mark: |I tried two different ways, can you comment please?| | |
+| Calc page |:white_check_mark: | | | |
+
+### Week 2 Check-Off
 
 
+|  | your Emoji | your comments | coach emoji | coach comments |
+| --- | --- | --- | --- | --- |
+| Home page | :white_check_mark:| | | |
+| Team page | :white_check_mark:| | | |
+| Calc page |:white_check_mark: | | | |
 
 
 [TOP](#javascript-1-project)
