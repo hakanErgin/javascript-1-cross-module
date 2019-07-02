@@ -1,34 +1,38 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>example</title>
+  <title>team page</title>
   <script type="text/javascript">
     // data (variables)
-    var team_name = "js hakan";
-    var team_members = ["xxx", "yyy", "zzz"];
-
+    var teamName = "team name";
+    var teamMembers= ['aaa', 'bbb', 'aaaa'];
     // functions
-    function print_thing(param) {
-      if (param === team_name) {
-        console.log("team name is: ", param);
-      } else if (param === team_members){
-        console.log("team members are: " , param);
-      } else {
-        console.log("team name is: " + team_name + " and team members are: " + team_members);
+    function printTeamName(strTeamName){
+     console.log("Our team name is: " + strTeamName);
+    }
+    function printTeamMember(arrayTeamMembers){
+     var i = 0;
+      console.log("Team members:");
+      for (i=0;i<arrayTeamMembers.length;i++){
+        console.log(arrayTeamMembers[i]);
       }
     } 
+   function printIntroduction(strTeamName,arrayTeamMembers) {
+     printTeamName(strTeamName);
+     printTeamMember(arrayTeamMembers);
+   }
   </script>
 </head>
 <body>
-  <h1>team page</h1>
-  <p>
-    team details  
-  </p>
-  <button onclick="print_thing(team_name);">team name</button> <br>
-  <button onclick="print_thing(team_members);">team members</button> <br>
-  <button onclick="print_thing();">details</button> <br>
-  <hr>
-  <a href="./index.html">home</a> <br>
+    <h1> Welcome to Team Page </h1>
+  <table>
+     <button onclick="printTeamName(teamName);">team name</button>
+     <button onclick="printTeamMember(teamMembers);">members</button>
+     <button onclick="printIntroduction(teamName,teamMembers)"> details</button>
+  <ul>
+    <a href="./index.html"> Go to Index Page</a>
+  </ul>
 </body>
 </html>

@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>home page</title>
-  <script type="text/javascript">
-    // data (variables)
-    var project = {
-      "name": "js week1 project",
-      "link": "https://github.com/hakanErgin/javascript-1-cross-module/tree/master/week-1",
-      "description": "this is week 1 js project"
-    }
-    // functions
-    function print_deets(obj) {
-      console.log(obj);
-    }
+  <script>
+      // data (variables)
+  var projectObject = {
+      name : "Project JavaScript No. 1",
+      link : "https://github.com/hakanErgin/javascript-1-cross-module/tree/master/week-1",
+      description : "This is my first Project in JavaScript",}
+  // functions
+  function print_deets(pObj) {
+  console.log("Project Name: " + pObj.name);
+  console.log("Project Link: " + pObj.link);
+  console.log("Project Description:" + pObj.description);
+  }
   </script>
 </head>
 <body>
-  <h1>week 1 index.html</a>
-  <p>greets</p>
-  <button onclick="print_deets(project)">print details</button><br>
-  <a href="team.html">team page</a><br>
-  <a href="calc.html">calc page</a><br>
+  <nav>
+    <a href="./team.html"> Go to Team Page</a> <br>
+    <a href="./calc.html"> Go to Calc</a>      
+  </nav>
+   <h1> Welcome to Webpage Project JavaScript No. 1. </h1>
+  <button onclick="print_deets(projectObject)"> details </button>
 </body>
 </html>
