@@ -11,23 +11,19 @@
      var b = 5;
     // functions
   function logAB(varA, varB){
-   console.log("The value of A is:"+ varA +" and the value of B is:"+ varB); 
+  return("The value of A is:"+ varA +" and the value of B is:"+ varB); 
   }
   function add(varA, varB){
-  console.log(varA +" plus "+ varB +" equals: ");  
-  console.log(varA + varB); 
+  return varA + varB; 
   }
   function subtract(varA, varB){
-  console.log(varA +" minus "+ varB +" equals: ");   
-  console.log(varA - varB); 
+  return varA - varB; 
   }
   function multiply(varA, varB){
-  console.log(varA +" times "+ varB +" equals: ");  
-  console.log(varA * varB);
+  return varA * varB;
   }
   function divide(varA, varB){
-  console.log(varA +" divided by "+ varB +" equals: ");  
-  console.log(varA / varB);
+  return varA / varB;
   }
   </script>
 </head>
@@ -35,10 +31,10 @@
 </nav>
 <body>
   <h1> Welcome to  Calc Page </h1>
-  <button onclick="logAB(a,b);"> log a b</button> 
-  <button onclick="add(a,b);"> add a b</button>   
-  <button onclick="subtract(a,b)"> substract a b</button>
-  <button onclick="multiply(a,b)"> multiply a b</button> 
-  <button onclick="divide(a,b)"> divide a b</button>
+  <button onclick="console.log(logAB(a,b))"> log a b</button> 
+  <button onclick="console.log(add(a,b))"> add a b</button>   
+  <button onclick="console.log(subtract(a,b))"> substract a b</button>
+  <button onclick="console.log(multiply(a,b))"> multiply a b</button> 
+  <button onclick="console.log(divide(a,b))"> divide a b</button>
 </body>
 </html>
