@@ -1,3 +1,5 @@
+_This repo is for studying purposes._
+
 # Javascript 1 Project
 
 In this project you will get a first feel for how JS and HTML interact to make a website.  You'll get to put into practice what you study in the exercises, and experience more open-ended challenges and problem solving.
